@@ -1,0 +1,76 @@
+body {
+    background: url('img/booking_BG1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f8f9fa;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    border-radius: 12px; /* Bo tròn góc form */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.form-control, .form-select {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px; /* Bo tròn input */
+}
+
+.btn-primary {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px; /* Bo tròn nút */
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #007bff; /* Nút đậm màu khi hover */
+}
+
+.booking-form h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* Nút trở về trang chủ */
+#backToHomeBtn {
+    position: fixed; /* Cố định vị trí của nút */
+    top: 20px; /* Khoảng cách từ trên cùng của trang */
+    left: 20px; /* Khoảng cách từ bên trái */
+    z-index: 1000; /* Đảm bảo nút luôn hiển thị trên các phần tử khác */
+    font-size: 18px; /* Cỡ chữ của nút */
+    color: #000; /* Màu chữ đen */
+    background-color: #fff; /* Nền màu trắng */
+    padding: 12px 25px; /* Thêm padding cho nút */
+    border-radius: 50px; /* Bo tròn nút theo dạng pill (hình chữ nhật bo tròn) */
+    font-weight: 500; /* Độ đậm chữ vừa phải */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ nhẹ cho nút */
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động mượt mà khi hover */
+    text-decoration: none; /* Bỏ gạch chân của liên kết */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Khoảng cách giữa biểu tượng và chữ */
+#backToHomeBtn i {
+    margin-right: 10px;
+}
+
+/* Hiệu ứng hover cho nút */
+#backToHomeBtn:hover {
+    background-color: #f8f9fa; /* Màu nền khi hover (nhạt hơn một chút so với nền ban đầu) */
+    color: #000; /* Chữ vẫn giữ màu đen khi hover */
+    transform: translateY(-4px); /* Nâng nút lên một chút khi hover */
+}
+
+/* Tạo hiệu ứng focus khi người dùng nhấn vào nút */
+#backToHomeBtn:focus {
+    outline: none; /* Bỏ viền focus */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng ánh sáng nhẹ khi focus */
+}
+
